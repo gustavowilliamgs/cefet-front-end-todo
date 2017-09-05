@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Procrastinator</title>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="marca">Tarefas a <br>Procrastinar</h1>
+    </header>
+
+    <main id="app">
+      <div id="novo-item">
+        <input type="text" id="novo-item-nome" autofocus placeholder="Digite o que você deseja procrastinar">
+        <!-- DESAFIO 2 -->
+        <!--
+        <select id="novo-item-categoria">
+          <option value="lazer">Lazer</option>
+          <option value="compras">Compras</option>
+          <option value="estudos">Estudos</option>
+        </select>
+        -->
+        <button id="incluir-novo-item">+</button>
+      </div>
+      <ul id="lista-todo">
+        <!-- Exemplo de item da lista -->
+        <li class="item-todo marcado">Exemplo de item da lista</li>
+      </ul>
+    </main>
+
+    <script src="todo.js" charset="utf-8"></script>
+  </body>
+</html>
