@@ -15,6 +15,9 @@ body {
   /* mescla os 3 fundos: 1 imagem, 1 gradiente e 1 cor */
   background-blend-mode: hard-light;
   font-family: 'Questrial', sans-serif;
+}
+
+body.animando {
   animation: altera-fundo 6s ease-in-out 0s infinite alternate;
 }
 

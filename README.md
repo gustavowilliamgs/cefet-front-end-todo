@@ -11,22 +11,26 @@ quer fazer. Fazendo isso, você vai treinar usar objetos em JavaScript e
 criar elementos HTML dinamicamente.
 
 
-### Exercício 1: Carregar itens existentes
+### Exercício 1: Carregar **itens existentes**
 
 No arquivo `todo.js` existe um vetor `itensTodo` em que cada item
-representa uma tarefa.
+representa uma tarefa. Ele já possui duas tarefas: "Comprar leite" e "Escutar chimbinha".
 
-Neste exercício, você deve criar uma função `insereItemNaPagina` que, recebe
-um objeto com uma tarefa e insere um elemento HTML `<li>` na
+Neste exercício, você deve criar uma função `insereItemNaPagina` (no singular) que, recebe
+**01 objeto** com uma tarefa e insere 01 elemento HTML `<li>` na
 lista de tarefas (_i.e._, `ul#lista-todo`). Ele **deve ser inserido ao final**.
 
 O `<li>` que representa a tarefa deve ter uma classe `item-todo`. Se a
 tarefa está `marcado` como `true`, você deve colocar a classe `marcado`
 no `<li class="item-todo">...</li>`, além da `item-todo`.
 
-Depois de criar a função, chame-a para cada item que está no vetor `itensTodo`.
+Depois de criar a função, **chame-a para cada item que está no vetor `itensTodo`**.
 Logo antes de popular o elemento HTML da lista com as tarefas, não se
 esqueça de remover todos os filhos que estiverem lá.
+
+Resultado parcial:
+
+![](docs/resultado-exercicio-1.png)
 
 ### Exercício 2: Incluir um novo item
 
@@ -48,6 +52,10 @@ assim:
 // pede o elemento para "roubar o foco" - mover o cursor para dentro dele
 elemento.focus();
 ```
+
+Resultado parcial:
+
+![](docs/resultado-exercicio-2.png)
 
 ### Desafio 1: Inserir novos itens no início
 
@@ -79,3 +87,16 @@ tarefa.
 Quando for incluir o elemento HTML dessa nova tarefa, coloque no `<li class="item-todo">` uma outra classe CSS com o nome `categoria-NOME`, em
 que NOME pode ser `lazer`, `compras` ou `estudos` (para as
 quais já existem regras CSS de estilização).
+
+
+## FAQ
+
+1. Como inserir um elemento ao final de um vetor?
+   ```js
+   let frutas = ['laranja', 'maçã'];
+   frutas.push('kiwi');
+   console.log(frutas);
+   // laranja, maçã, kiwi
+   ```
+   - Veja os slides
+1.
