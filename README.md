@@ -20,7 +20,7 @@ Neste exercício, você deve criar uma função `insereItemNaPagina` (no singula
 **01 objeto** com uma tarefa e insere 01 elemento HTML `<li>` na
 lista de tarefas (_i.e._, `ul#lista-todo`). Ele **deve ser inserido ao final**.
 
-O `<li>` que representa a tarefa deve ter uma classe `item-todo`. Se a
+O `<li>` que representa a tarefa deve ter uma classe `item-todo` para que ele seja devidamente estilizado. Se a
 tarefa está `marcado` como `true`, você deve colocar a classe `marcado`
 no `<li class="item-todo">...</li>`, além da `item-todo`.
 
@@ -98,5 +98,14 @@ quais já existem regras CSS de estilização).
    console.log(frutas);
    // laranja, maçã, kiwi
    ```
-   - Veja os slides
-1.
+   - Veja os [slides da aula js2][array-push]
+1. Como colocar/tirar uma classe em um elemento HTML?
+   ```js
+   ovelhaEl.classList.add('raca-de-ovelha');
+   ovelhaEl.classList.remove('raca-de-ovelha');
+   ovelhaEl.classList.toggle('invisivel');
+   ```
+   Veja os [slides da aula js2][classes]
+
+[array-push]: https://fegemo.github.io/cefet-front-end/classes/js2/#metodos-de-arrays
+[classes]: https://fegemo.github.io/cefet-front-end/classes/js2/#colocando-removendo-classes
