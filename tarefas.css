@@ -56,72 +56,72 @@ body.animando {
               0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
-#lista-todo {
+#lista-tarefa {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#novo-item {
+#nova-tarefa {
   display: flex;
   width: 100%;
   box-sizing: border-box;
 }
 
-#novo-item input,
-#novo-item select,
-#novo-item button {
+#nova-tarefa input,
+#nova-tarefa select,
+#nova-tarefa button {
   font: inherit;
   outline: none;
   border: none;
   box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
 }
 
-#novo-item-nome {
+#nova-tarefa-nome {
   flex: 1;
 }
 
-#novo-item-nome::input-placeholder {
+#nova-tarefa-nome::input-placeholder {
   font-style: italic;
 }
 
-#novo-item-nome,
-.item-todo {
+#nova-tarefa-nome,
+.item-tarefa {
   box-sizing: border-box;
   padding: 0.5em 0.5em 0.5em 1.5em;
   background-color: white;
 }
 
-#novo-item,
-.item-todo {
+#nova-tarefa,
+.item-tarefa {
   width: 100%;
 }
 
-#novo-item-nome,
-.item-todo:not(:last-child) {
+#nova-tarefa-nome,
+.item-tarefa:not(:last-child) {
   border-bottom: 1px solid #e6e6e6;
 }
 
-#incluir-novo-item {
+#incluir-nova-tarefa {
   width: 3em;
   cursor: pointer;
 }
 
-#incluir-novo-item:hover {
+#incluir-nova-tarefa:hover {
   background-color: silver;
   outline: 1px solid rgba(0, 0, 128, 0.3);
 }
 
-#incluir-novo-item:active {
+#incluir-nova-tarefa:active {
   background-color: gray;
 }
 
-.item-todo {
+.item-tarefa {
   position: relative;
   transition: all 200ms ease;
 }
 
-.item-todo::before {
+.item-tarefa::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -131,24 +131,24 @@ body.animando {
   width: 9px;
 }
 
-.item-todo.categoria-lazer::before {
+.item-tarefa.categoria-lazer::before {
   background-color: rebeccapurple;
 }
 
-.item-todo.categoria-compras::before {
+.item-tarefa.categoria-compras::before {
   background-color: yellow;
 }
 
-.item-todo.categoria-estudos::before {
+.item-tarefa.categoria-estudos::before {
   background-color: cornflowerblue;
 }
 
-.item-todo.marcado {
+.item-tarefa.marcado {
   text-decoration: line-through;
   color: silver;
 }
 
-.item-todo .data-limite {
+.item-tarefa .data-limite {
   font-size: 75%;
   color: silver;
   float: right;

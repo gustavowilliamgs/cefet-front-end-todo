@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Procrastinator</title>
-    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="tarefas.css">
+    <link rel="shortcut icon" href="imgs/icone.png">
   </head>
   <body class="animando">
     <header>
@@ -11,24 +12,24 @@
     </header>
 
     <main id="app">
-      <div id="novo-item">
-        <input type="text" id="novo-item-nome" autofocus placeholder="Digite o que você deseja procrastinar">
+      <div id="nova-tarefa">
+        <input type="text" id="nova-tarefa-nome" autofocus placeholder="Digite o que você deseja procrastinar">
         <!-- DESAFIO 3 -->
         <!--
-        <select id="novo-item-categoria">
+        <select id="nova-tarefa-categoria">
           <option value="lazer">Lazer</option>
           <option value="compras">Compras</option>
           <option value="estudos">Estudos</option>
         </select>
         -->
-        <button id="incluir-novo-item">+</button>
+        <button id="incluir-nova-tarefa">+</button>
       </div>
-      <ul id="lista-todo">
+      <ul id="lista-tarefa">
         <!-- Exemplo de item da lista -->
-        <li class="item-todo marcado">Exemplo de item da lista</li>
+        <li class="item-tarefa marcado">Exemplo de item da lista</li>
       </ul>
     </main>
 
-    <script src="todo.js" charset="utf-8"></script>
+    <script src="tarefas.js" charset="utf-8"></script>
   </body>
 </html>

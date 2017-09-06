@@ -1,4 +1,4 @@
-# Lista de Tarefas para Procrastinar
+tarefas# Lista de Tarefas para Procrastinar
 
 Gerencie aquelas tarefas que você quer ~~não~~ fazer.
 
@@ -13,18 +13,18 @@ criar elementos HTML dinamicamente.
 
 ### Exercício 1: Carregar **itens existentes**
 
-No arquivo `todo.js` existe um vetor `itensTodo` em que cada item
+No arquivo `tarefas.js` existe um vetor `tarefas` em que cada objeto
 representa uma tarefa. Ele já possui duas tarefas: "Comprar leite" e "Escutar chimbinha".
 
-Neste exercício, você deve criar uma função `insereItemNaPagina` (no singular) que, recebe
+Neste exercício, você deve criar uma função `insereTarefaNaPagina` (no singular) que, recebe
 **01 objeto** com uma tarefa e insere 01 elemento HTML `<li>` na
-lista de tarefas (_i.e._, `ul#lista-todo`). Ele **deve ser inserido ao final**.
+lista de tarefas (_i.e._, `ul#lista-tarefas`). Ele **deve ser inserido ao final**.
 
-O `<li>` que representa a tarefa deve ter uma classe `item-todo` para que ele seja devidamente estilizado. Se a
+O `<li>` que representa a tarefa deve ter uma classe `item-tarefa` para que ele seja devidamente estilizado. Se a
 tarefa está `marcado` como `true`, você deve colocar a classe `marcado`
-no `<li class="item-todo">...</li>`, além da `item-todo`.
+no `<li class="item-tarefa">...</li>`, além da `item-tarefa`.
 
-Depois de criar a função, **chame-a para cada item que está no vetor `itensTodo`**.
+Depois de criar a função, **chame-a para cada objeto que está no vetor `tarefas`**.
 Logo antes de popular o elemento HTML da lista com as tarefas, não se
 esqueça de remover todos os filhos que estiverem lá.
 
@@ -32,17 +32,17 @@ Resultado parcial:
 
 ![](docs/resultado-exercicio-1.png)
 
-### Exercício 2: Incluir um novo item
+### Exercício 2: Incluir uma nova tarefa
 
-Quando o usuário clicar no botão `#incluir-novo-item`, (a) crie um novo objeto
-representano a nova tarefa, (b) coloque-a ao final do vetor `itensTodo` e,
-então, (c) chame a função que `insereItemNaPagina`.
+Quando o usuário clicar no botão `#incluir-nova-tarefa`, (a) crie um novo objeto
+representano a nova tarefa, (b) coloque-a ao final do vetor `tarefas` e,
+então, (c) chame a função que `insereTarefaNaPagina`.
 
-O nome do item é o que o usuário digitou no campo, a categoria padrão é
+O nome da tarefa é o que o usuário digitou no campo, a categoria padrão é
 `outros`, a propriedade `marcado` deve ser `false`.
 
 Ao final dessa função, você deve **limpar o campo** onde o usuário digitou
-a tarefa (_i.e._, `novo-item-nome`).
+a tarefa (_i.e._, `nova-tarefa-nome`).
 
 Opcionalmente, você pode **"devolver o foco"** para esse mesmo controle. Todo
 elemento HTML que pode "ter o foco" tem um método `focus()` que podemos chamar
@@ -59,7 +59,7 @@ Resultado parcial:
 
 ### Desafio 1: Inserir novos itens no início
 
-Em vez de inserir novos itens por último, insira-os no topo da `ul#lista-todo`.
+Em vez de inserir novos itens por último, insira-os no topo da `ul#lista-tarefas`.
 Para isso, lembre-se dos 3 métodos para vincular novos elementos HTML
 na página e escolha o apropriado:
 
@@ -68,23 +68,23 @@ na página e escolha o apropriado:
 1. `containerEl.replaceChild`
 
 
-### Desafio 2: Pressionar "Enter" inclui o item
+### Desafio 2: Pressionar "Enter" inclui a tarefa
 
 Além do clique no botão, faça com que o pressionar da tecla "Enter",
-quando o foco estiver no campo de texto (_i.e._, `novo-item-nome`), também
+quando o foco estiver no campo de texto (_i.e._, `nova-tarefa-nome`), também
 insira a nova tarefa no vetor e na página.
 
 Para isso, você pode usar o evento _keyup_ do controle e, dentro da _callback_,
 perguntar qual `e.key` foi pressionada. Se `e.key === 'Enter'`, você pode
 chamar a mesma função que registrou para o clique do botão.
 
-### Desafio 3: Escolher a categoria do item
+### Desafio 3: Escolher a categoria da tarefa
 
 Cada tarefa pode ter uma categoria associada. Descomente o código do desafio 3
 e escreva código que permita que o usuário escolha qual a categoria da nova
 tarefa.
 
-Quando for incluir o elemento HTML dessa nova tarefa, coloque no `<li class="item-todo">` uma outra classe CSS com o nome `categoria-NOME`, em
+Quando for incluir o elemento HTML dessa nova tarefa, coloque no `<li class="item-tarefa">` uma outra classe CSS com o nome `categoria-NOME`, em
 que NOME pode ser `lazer`, `compras` ou `estudos` (para as
 quais já existem regras CSS de estilização).
 
