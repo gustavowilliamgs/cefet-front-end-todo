@@ -11,7 +11,7 @@ quer fazer. Fazendo isso, você vai treinar usar objetos em JavaScript e
 criar elementos HTML dinamicamente.
 
 
-### Exercício 1: Carregar **itens existentes**
+### Exercício 1: Carregar **tarefas existentes**
 
 No arquivo `tarefas.js` existe um vetor `tarefas` em que cada objeto
 representa uma tarefa. Ele já possui duas tarefas: "Comprar leite" e
