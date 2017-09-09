@@ -44,7 +44,7 @@ final do vetor `tarefas` (veja no FAQ) e, então, (c) chame a função que
 `insereTarefaNaPagina` passando o objeto da nova tarefa como argumento.
 
 O `nome` da tarefa é o que o usuário digitou no campo, a `categoria` padrão é
-`outros`, a propriedade `marcado` deve ser `false`.
+a `'outros'`, a propriedade `marcado` deve ser `false`.
 
 Ao final dessa função, você deve **limpar o campo** onde o usuário digitou
 a tarefa (_i.e._, `nova-tarefa-nome`).
@@ -98,7 +98,7 @@ botaoEl.addEventListener('click', function(e) {
 
 ² função com nome:
 ```js
-function incluirTarefaNaPagina(e) {
+function novaTarefa(e) {
   // esta função pode ser chamada em mais de um lugar,
   // porque ela tem um nome e foi definida "no arquivo"
 }
@@ -155,7 +155,7 @@ quais já existem regras CSS de estilização).
    ovelhaEl.classList.remove('raca-de-ovelha');
    ovelhaEl.classList.toggle('invisivel');
    ```
-   Veja os [slides da aula js2][classes]
+   - Veja os [slides da aula js2][classes]
 
 [criando-elementos-dinamicamente]: https://fegemo.github.io/cefet-front-end/classes/js4/#criando-elementos-html-dinamicamente
 [criando-objetos]: https://fegemo.github.io/cefet-front-end/classes/js4/#usando-objetos-em-javascript
