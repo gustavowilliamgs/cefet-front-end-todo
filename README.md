@@ -156,7 +156,16 @@ quais já existem regras CSS de estilização).
    ovelhaEl.classList.toggle('invisivel');
    ```
    - Veja os [slides da aula js2][classes]
+1. Como fazer algo quando um botão é clicado?
+   ```js
+   let botaoEl = document.querySelector('button');
 
+   function fazAlgumaCoisa() {
+
+   }
+
+   botaoEl.addEventListener('click', fazAlgumaCoisa);
+   ```
 [criando-elementos-dinamicamente]: https://fegemo.github.io/cefet-front-end/classes/js4/#criando-elementos-html-dinamicamente
 [criando-objetos]: https://fegemo.github.io/cefet-front-end/classes/js4/#usando-objetos-em-javascript
 [array-push]: https://fegemo.github.io/cefet-front-end/classes/js2/#metodos-de-arrays
