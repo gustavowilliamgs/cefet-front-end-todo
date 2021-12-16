@@ -1,6 +1,6 @@
 # Lista de Tarefas para Procrastinar 📓
 
-Gerencie aquelas tarefas que você quer ~~não~~ fazer.
+Gerencie aquelas tarefas que você quer ~~não~~ fazer. Baixe o [código seminal][seminal].
 
 ![Resultado final da atividade](https://fegemo.github.io/cefet-front-end-large-assets/apng/todo-resultado-final.png)
 
@@ -166,7 +166,9 @@ quais já existem regras CSS de estilização).
 
    botaoEl.addEventListener('click', fazAlgumaCoisa);
    ```
+  
 [criando-elementos-dinamicamente]: https://fegemo.github.io/cefet-front-end/classes/js4/#criando-elementos-html-dinamicamente
 [criando-objetos]: https://fegemo.github.io/cefet-front-end/classes/js4/#usando-objetos-em-javascript
 [array-push]: https://fegemo.github.io/cefet-front-end/classes/js2/#metodos-de-arrays
 [classes]: https://fegemo.github.io/cefet-front-end/classes/js2/#colocando-removendo-classes
+[seminal]: https://github.com/fegemo/cefet-front-end-todo/archive/refs/heads/main.zip
