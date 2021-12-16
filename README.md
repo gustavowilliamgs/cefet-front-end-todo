@@ -1,8 +1,8 @@
-# Lista de Tarefas para Procrastinar :notebook:
+# Lista de Tarefas para Procrastinar 📓
 
 Gerencie aquelas tarefas que você quer ~~não~~ fazer.
 
-![Resultado final da atividade](docs/resultado-final.png)
+![Resultado final da atividade](https://fegemo.github.io/cefet-front-end-large-assets/apng/todo-resultado-final.png)
 
 ## Atividade
 
@@ -34,7 +34,7 @@ não se esqueça de remover todos os filhos que estiverem lá.
 
 Resultado parcial:
 
-![](docs/resultado-exercicio-1.png)
+![](https://fegemo.github.io/cefet-front-end-large-assets/apng/todo-resultado-exercicio-1.png)
 
 ### Exercício 2: Incluir uma nova tarefa
 
@@ -64,7 +64,7 @@ elemento.focus();
 
 Resultado parcial:
 
-![](docs/resultado-exercicio-2.png)
+![](https://fegemo.github.io/cefet-front-end-large-assets/apng/todo-resultado-exercicio-2.png)
 
 ### Desafio 1: Mostrar as novas tarefas no início da lista
 
